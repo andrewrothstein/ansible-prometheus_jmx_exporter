@@ -20,4 +20,3 @@
     src: '{{ prometheus_jmx_exporter_install_jar }}'
     dest: '{{ prometheus_jmx_exporter_link }}'
     state: link
-
