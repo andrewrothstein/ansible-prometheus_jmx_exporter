@@ -1,0 +1,7 @@
+---
+# vars file for prometheus_jmx_exporter
+prometheus_jmx_exporter_jar: jmx_prometheus_javaagent-{{ prometheus_jmx_exporter_ver }}.jar
+prometheus_jmx_exporter_url: '{{ prometheus_jmx_exporter_mirror }}/{{ prometheus_jmx_exporter_ver }}/{{ prometheus_jmx_exporter_jar }}'
+prometheus_jmx_exporter_install_dir: '{{ prometheus_jmx_exporter_parent_install_dir }}/jmx_prometheus_javaagent'
+prometheus_jmx_exporter_install_jar: '{{ prometheus_jmx_exporter_install_dir }}/{{ prometheus_jmx_exporter_jar }}'
+prometheus_jmx_exporter_link: '{{ prometheus_jmx_exporter_parent_install_dir }}/jmx_prometheus_javaagent.jar'
