@@ -19,3 +19,5 @@ prometheus_jmx_exporter_checksums:
   '0.17.1': sha256:5bc29117b334e3e8615fce419a60b7372b0059de7c02c76824b6b6407af19888
   # https://repo1.maven.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent/0.17.2/jmx_prometheus_javaagent-0.17.2.jar
   '0.17.2': sha256:1279040261ee47b834bd21488f42e6dc765d4bd95442a66f586bec238a081293
+  # https://repo1.maven.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent/0.19.0/jmx_prometheus_javaagent-0.19.0.jar
+  '0.19.0': sha256:fb507001996c9af38709c110de32517f7592c818bb33e18bc5fe94e076d24c1f
