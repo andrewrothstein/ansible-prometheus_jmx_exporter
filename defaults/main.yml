@@ -1,6 +1,6 @@
 ---
 # defaults file for prometheus_jmx_exporter
-prometheus_jmx_exporter_ver: 0.17.2
+prometheus_jmx_exporter_ver: 0.20.0
 prometheus_jmx_exporter_mirror: https://repo1.maven.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent
 
 prometheus_jmx_exporter_parent_install_dir: /usr/local
@@ -21,3 +21,5 @@ prometheus_jmx_exporter_checksums:
   '0.17.2': sha256:1279040261ee47b834bd21488f42e6dc765d4bd95442a66f586bec238a081293
   # https://repo1.maven.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent/0.19.0/jmx_prometheus_javaagent-0.19.0.jar
   '0.19.0': sha256:fb507001996c9af38709c110de32517f7592c818bb33e18bc5fe94e076d24c1f
+  # https://repo1.maven.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent/0.20.0/jmx_prometheus_javaagent-0.20.0.jar
+  '0.20.0': sha256:8b67ed40485d475648c36d11d21464b484406f85faf912b3363f71a6a7861320
