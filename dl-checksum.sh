@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-set -e
+set -ex
 DIR=~/Downloads
 MIRROR=https://repo1.maven.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent
 
@@ -16,4 +16,6 @@ dl_ver() {
     printf "  '%s': sha256:%s\n" $ver $(sha256sum $lfile | awk '{print $1}')
 }
 
-dl_ver ${1:-0.20.0}
+dl_ver 1.0.0
+dl_ver 1.0.1
+#dl_ver ${1:-1.1.0}

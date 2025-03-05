@@ -1,22 +1,22 @@
 ---
-- name: creating {{ prometheus_jmx_exporter_install_dir }}
+- name: Creating {{ prometheus_jmx_exporter_install_dir }}
   become: '{{ prometheus_jmx_exporter_elevate }}'
   become_user: root
-  file:
+  ansible.builtin.file:
     path: '{{ prometheus_jmx_exporter_install_dir }}'
     state: directory
-    mode: 0755
-- name: downloading {{ prometheus_jmx_exporter_url }} to {{ prometheus_jmx_exporter_install_jar }}
+    mode: '755'
+- name: Downloading {{ prometheus_jmx_exporter_url }} to {{ prometheus_jmx_exporter_install_jar }}
   become: '{{ prometheus_jmx_exporter_elevate }}'
   become_user: root
-  get_url:
+  ansible.builtin.get_url:
     url: '{{ prometheus_jmx_exporter_url }}'
     dest: '{{ prometheus_jmx_exporter_install_jar }}'
-    mode: 0644
-- name: linking {{ prometheus_jmx_exporter_link }} to {{ prometheus_jmx_exporter_install_jar }}
+    mode: '644'
+- name: Linking {{ prometheus_jmx_exporter_link }} to {{ prometheus_jmx_exporter_install_jar }}
   become: '{{ prometheus_jmx_exporter_elevate }}'
   become_user: root
-  file:
+  ansible.builtin.file:
     src: '{{ prometheus_jmx_exporter_install_jar }}'
     dest: '{{ prometheus_jmx_exporter_link }}'
     state: link
